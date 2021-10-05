@@ -14,4 +14,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('ok')
+    return HttpResponse('好好学习，天天向上')
