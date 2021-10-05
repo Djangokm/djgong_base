@@ -15,9 +15,18 @@ from django.db import models
 class BookInfo(models.Model):
     name = models.CharField(max_length=10)
 
+    # 重写str 方法以让admin显示书籍名字
+
+    def __str__(self):
+        return self.name
+
 
 class PeopleInfo(models.Model):
     name = models.CharField(max_length=10)
     gender = models.BooleanField()
     # 外键约束任务属于哪本书
-    book = models.ForeignKey(BookInfo,on_delete=models.CASCADE)
+    book = models.ForeignKey(BookInfo, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
