@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR=/home/kmqwin/桌面/django_project/djgong_base/bookmanager
 
 
 # Quick-start development settings - unsuitable for production
@@ -23,8 +24,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bh_^q=u1kf4p%pkeu(kz!n$#9&^x1%#q@f)sr2--@41a1-b9gh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 调试模式
+# 在我们开发的时，我们需要看到更多的信息，所以要开启debug模式
+# 当我们的程序上线以后，就改为False
 DEBUG = True
-
+# 允许以什么样的是形式来访问我的项目 默认是127.0.0.1
 ALLOWED_HOSTS = []
 
 
