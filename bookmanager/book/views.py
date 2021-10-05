@@ -12,6 +12,16 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.http import HttpResponse
 
+"""
+request：请求
+template_name：模板名字
+"""
+
 
 def index(request):
-    return HttpResponse('好好学习，天天向上')
+    context={
+        'name':'勇强仓储管理页面'
+    }
+    return render(request, 'book/index.html',context=context)
+
+
